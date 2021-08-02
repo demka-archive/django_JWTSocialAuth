@@ -20,5 +20,6 @@ urlpatterns = [
     path('', include('social_auth.urls')),
     path('admin/', admin.site.urls),
     path('auth/', include('djoser.urls')),
-    path('auth/', include('djoser.urls.jwt'))
+    path('auth/', include('djoser.urls.jwt')),
+    path('auth/', include('drf_social_oauth2.urls', namespace='drf')),
 ]
